@@ -88,7 +88,7 @@ nextModal.addEventListener("click", () => {
 });
 
 
-const openRoadmap = () => {
+const openWhitepapar = () => {
   window.open('asset/assets/Catvax - Whitepaper 2.0_20240523_143622_0000 (2).pdf', '_blank');
 }
 
@@ -108,3 +108,19 @@ function copyAddress() {
   }).showToast();
 }
 
+
+
+// menu toggle 
+function toggleMenu() {
+  const nav = document.querySelector('.nav');
+  const hamburger = document.querySelector('.hamburger i');
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('fa-bars');
+  hamburger.classList.toggle('fa-times');
+}
+
+
+  // JavaScript to handle the loader
+  window.addEventListener('load', function() {
+    document.getElementById('loader').style.display = 'none';
+  });

@@ -14,32 +14,36 @@
   <link href="asset/assets/styles.css" rel="stylesheet">
 
   <title>Catvax</title>
+
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-  <!-- <header class="fixed-top w-100">
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+  <header class="header" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex align-items-center justify-content-lg-between flex-column flex-sm-row justify-content-between header-nav">
-            <a href="./index.html"
-              class="d-flex align-items-center mb-2 mb-lg-0 me-lg-3 text-dark text-decoration-none ">
-              <img src="asset/images/catvax-logo.jpeg" alt="CatvaxDGF" width="70px" class="rounded-circle mt-3"
-                data-aos="fade-down" data-aos-duration="1000">
-            </a>
-            <ul class="nav d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
-              <li class="me-md-2"><a href="#gallery" class="btn btn-launch px-3 py-2">Gallery</span></a></li>
-              <li class="me-md-2"><a href="#socials" class="btn btn-launch px-3 py-2">Socials</a></li>
-              <li class="me-md-2"><a href="#about" class="btn btn-launch px-3 py-2">About</a></li>
-              <li class="me-md-2"><a href="#roadmap" class="btn btn-launch px-3 py-2">Roadmap</a></li>
-              <li class="me-md-2"><a href="#buy" class="btn btn-launch px-3 py-2">How To Buy</a></li>
-              <li class="me-md-2" onclick="openRoadmap()"><a class="btn btn-launch px-3 py-2">Whitepaper</a></li>
-            </ul>
-          </div>
+      <div class="header-nav">
+        <a href="./index.html" class="logo">
+          <img src="asset/images/catvax-logo.jpeg" alt="CatvaxDGF" class="logo-img">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#socials" class="nav-link">Socials</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+            <li class="nav-item"><a href="#buy" class="nav-link">How To Buy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="openWhitepapar()">Whitepaper</a></li>
+            <li class="nav-item"><a href="donation.html" class="nav-link">Fund Request</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </div>
-  </header> -->
+  </header>
 
   <div class="blurbg" id="top">
     <section class="headertext main-section">

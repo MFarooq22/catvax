@@ -21,6 +21,12 @@
       line-height: 2rem;
     }
 
+    .header{
+      position: sticky;
+      top: 0;
+      margin-bottom: 1rem;
+    }
+
     li {
       font-size: 18px;
       color: white;
@@ -52,30 +58,31 @@ h2{
       margin-top: 20px;
       /* text-align: center; */
     }
+
+
   </style>
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-  <header class="w-100">
+  <header class="header" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex align-items-center justify-content-lg-between flex-column flex-lg-row">
-            <a href="./index.html"
-              class="d-flex align-items-center mb-2 mb-lg-0 me-lg-3 text-dark text-decoration-none ">
-              <img src="asset/images/catvax-logo.jpeg" alt="CatvaxDGF" width="70px" class="rounded-circle mt-3"
-                data-aos="fade-down" data-aos-duration="1000">
-            </a>
-            <ul class="nav d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">
-              <!-- <li class="me-md-2"><a href="#partners" class="btn btn-launch px-3 py-2">Our Partners</span></a></li> -->
-              <li class="me-md-2"><a href="./index.html#gallery" class="btn btn-launch px-3 py-2">Gallery</span></a></li>
-              <li class="me-md-2"><a href="./index.html#socials" class="btn btn-launch px-3 py-2">Socials</a></li>
-              <li class="me-md-2"><a href="./index.html#about" class="btn btn-launch px-3 py-2">About</a></li>
-              <li class="me-md-2"><a href="./index.html#roadmap" class="btn btn-launch px-3 py-2">Roadmap</a></li>
-              <li class="me-md-2"><a href="./index.html#buy" class="btn btn-launch px-3 py-2">How To Buy</a></li>
-              <li class="me-md-2" onclick="openRoadmap()"><a class="btn btn-launch px-3 py-2">Whitepaper</a></li>
-            </ul>
-          </div>
+      <div class="header-nav">
+        <a href="./index.html" class="logo">
+          <img src="asset/images/catvax-logo.jpeg" alt="CatvaxDGF" class="logo-img">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./index.html#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="./index.html#socials" class="nav-link">Socials</a></li>
+            <li class="nav-item"><a href="./index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="./index.html#roadmap" class="nav-link">Roadmap</a></li>
+            <li class="nav-item"><a href="./index.html#buy" class="nav-link">How To Buy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="openWhitepapar()">Whitepaper</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </div>
@@ -162,6 +169,7 @@ h2{
   <script src="asset/assets/jquery.i18n.min.js"></script>
   <script src="./asset/assets/script.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://kit.fontawesome.com/101f3720b3.js" crossorigin="anonymous"></script>
 
 
 </body>
