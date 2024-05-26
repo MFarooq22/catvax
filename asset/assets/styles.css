@@ -865,3 +865,10 @@ footer img.social {
     left: -9999px;
   }
 } */
+
+@media (max-width){
+  #partners{
+    display: grid!important;
+  grid-template-columns: auto auto!important;
+  }
+}
