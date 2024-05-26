@@ -708,6 +708,16 @@ footer img.social {
     flex-direction: column;
   }
 
+  .main-section .main-buttons{
+    flex-direction: row;
+  }
+
+  .ca{
+    margin-top: 0px!important;
+  }
+eft
+  
+
   #partners .row {
     column-gap: 0rem;
     justify-content: start;
@@ -723,6 +733,7 @@ footer img.social {
     align-items: center!important;
     width: 100%;
     margin-top: 0rem!important;
+    margin-bottom: 3rem;
   }
   .rifht-side{
     justify-content: center!important;
