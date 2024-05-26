@@ -88,10 +88,6 @@ nextModal.addEventListener("click", () => {
 });
 
 
-const openWhitepapar = () => {
-  window.open('asset/assets/Catvax - Whitepaper 2.0_20240523_143622_0000 (2).pdf', '_blank');
-}
-
 
 
 //   copy wallet address 
@@ -119,8 +115,3 @@ function toggleMenu() {
   hamburger.classList.toggle('fa-times');
 }
 
-
-  // JavaScript to handle the loader
-  window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
-  });
