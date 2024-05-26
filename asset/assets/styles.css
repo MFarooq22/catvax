@@ -732,55 +732,6 @@ header .btn-contact:hover {
   color: #fff;
 }
 
-footer {
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  background: #efcc43;
-  position: relative;
-}
-
-footer hr {
-  border-radius: 50rem;
-  height: 3px !important;
-  background: linear-gradient(90deg, #BE844D 0%, #FFD700 100%);
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-footer h3 {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-footer p {
-  color: #000;
-  font-size: .9rem;
-  font-weight: 400;
-}
-
-footer p a {
-  color: #fff;
-}
-
-footer img.social {
-  width: 30px;
-}
-
-.copyright {
-  text-align: center;
-  position: absolute;
-  right: 40%;
-  left: 45%;
-}
-
-.footer-social {
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-  bottom: 10%;
-}
-
 .padding-4 {
   padding-top: 24px;
 }
