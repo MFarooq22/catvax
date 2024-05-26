@@ -337,7 +337,7 @@ header .btn-contact:hover {
 }
 
 .choose .coin1 {
-  top: -450px;
+  top: -490px;
   margin-bottom: -450px;
   z-index: 0;
 }
@@ -973,6 +973,10 @@ footer img.social {
   .enquire h2,
   .whychoose h2 {
     font-size: 1.8rem;
+  }
+
+  .choose .coin1{
+    display: none;
   }
 }
 
