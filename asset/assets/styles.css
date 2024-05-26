@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 html {
   scroll-behavior: smooth;
@@ -17,7 +19,7 @@ body {
 
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Comic Sans MS', cursive;
+  font-family: "Playfair Display", serif;
 }
 
 p{
@@ -865,10 +867,3 @@ footer img.social {
     left: -9999px;
   }
 } */
-
-@media (max-width){
-  #partners{
-    display: grid!important;
-  grid-template-columns: auto auto!important;
-  }
-}
