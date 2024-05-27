@@ -1088,7 +1088,7 @@ header .btn-contact:hover {
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 361px) {
   .prev{
     top: 40%;
   }
