@@ -835,6 +835,10 @@ footer p{
 
 
 @media (max-width: 991.98px) {
+
+  .nav{
+    width: 250px;
+  }
   p {
     font-size: 16px;
   }
@@ -932,7 +936,6 @@ footer p{
     width: 150px;
     height: 150px;
   } */
-
   .image-container span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
   }
@@ -1076,6 +1079,10 @@ footer p{
 @media (max-width: 480px) {
   .gallery{
     height: 40vh;
+  }
+
+  .nav{
+    width: 230px;
   }
   
     .image-container {
