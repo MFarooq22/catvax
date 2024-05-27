@@ -26,7 +26,6 @@ window.addEventListener('load', async () => {
   await switchLang();
 })
 
-// gallery code 
 const imgContainer = document.querySelector(".image-container");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
@@ -59,8 +58,9 @@ function updateGallery() {
 updateGallery();
 
 const images = document.querySelectorAll(".image-container img");
-images.forEach((img) => {
+images.forEach((img, index) => {
   img.addEventListener("click", (e) => {
+    currentIndex = index;
     modal.style.display = "block";
     modalImg.src = e.target.src;
   });
@@ -75,17 +75,16 @@ const nextModal = document.getElementById("nextModal");
 
 let currentIndex = 0;
 
-// Function to navigate to the previous image in the modal
 prevModal.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   modalImg.src = images[currentIndex].src;
 });
 
-// Function to navigate to the next image in the modal
 nextModal.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % images.length;
   modalImg.src = images[currentIndex].src;
 });
+
 
 
 

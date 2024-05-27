@@ -825,6 +825,52 @@ header .btn-contact:hover {
     font-size: 1.5rem;
   }
 
+  /* gallery  */
+
+}
+
+
+@media (max-width: 480px) {
+.gallery{
+  height: 44vh;
+}
+
+  .image-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .image-container span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+  }
+
+  .gallery-btn {
+    padding: 6px 12px;
+    bottom: -60px;
+  }
+
+
+
+  .prev {
+    left: 0;
+    top: 55%;
+  }
+
+  .next {
+    right: 0;
+    top: 55%;
+  }
+
+  .modal-content {
+    width: 80% !important;
+    margin-top: 130px;
+  }
+
+  .close {
+    top: 128px;
+    right: 21px;
+    font-size: 30px;
+  }
 }
 
 
@@ -875,6 +921,57 @@ header .btn-contact:hover {
   }
   .nav-list li a {
     letter-spacing: 1px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-container span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+  }
+
+  .gallery-btn {
+    padding: 8px 15px;
+  }
+
+  #prev {
+    left: 10%;
+  }
+
+  #next {
+    right: 10%;
+  }
+
+  .modal-content {
+    width: 90% !important;
+  }
+  
+  .ping {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .qing {
+    margin: 0;
+    padding-left: 0px;
+  }
+
+  .oimg {
+    padding-left: 0;
+  }
+
+  .headertext h4 {
+    font-size: 12px !important;
+  }
+
+  .vf {
+    position: absolute;
+    left: -9999px;
   }
 }
 
@@ -950,30 +1047,6 @@ header .btn-contact:hover {
   width: 800px !important;
 }
 
-@media only screen and (max-width:767px) {
-  .ping {
-    margin: 0;
-    padding-left: 0;
-  }
-
-  .qing {
-    margin: 0;
-    padding-left: 0px;
-  }
-
-  .oimg {
-    padding-left: 0;
-  }
-
-  .headertext h4 {
-    font-size: 12px !important;
-  }
-
-  .vf {
-    position: absolute;
-    left: -9999px;
-  }
-}
 
 .bg-col {
   background-color: #efcc43;
@@ -983,6 +1056,49 @@ header .btn-contact:hover {
   background: #000 !important;
   border-radius: 35px;
 }
+
+@media (max-width: 480px) {
+  .gallery{
+    height: 44vh;
+  }
+  
+    .image-container {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .image-container span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+    }
+  
+    .gallery-btn {
+      padding: 6px 12px;
+      bottom: -60px;
+    }
+  
+  
+  
+    .prev {
+      left: 0;
+      top: 55%;
+    }
+  
+    .next {
+      right: 0;
+      top: 55%;
+    }
+  
+    .modal-content {
+      width: 80% !important;
+      margin-top: 130px;
+    }
+  
+    .close {
+      top: 128px;
+      right: 21px;
+      font-size: 30px;
+    }
+  }
 
 /* @media (max-width: 767px) {
   .headertext h4 {
