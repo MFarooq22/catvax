@@ -15,7 +15,7 @@ body {
   background-image: url(bg.png);
   background-size: cover;
   /* background-attachment: fixed; */
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 
 }
 
@@ -749,12 +749,23 @@ header .btn-contact:hover {
   margin-top: 1.8rem;
 }
 
+@media (max-width: 1260px) {
+  .choose .coin1 img {
+    width: 450px;
+}
+}
+
 @media (max-width: 1200px) {
   .prev{
     left: 100px;
   }
   .next{
     right: 100px;
+  }
+
+  .ping {
+    margin: 22px 0!important;
+    margin-bottom: 52px 0!important;
   }
 }
 
@@ -807,6 +818,15 @@ header .btn-contact:hover {
   .nav-list li a {
     letter-spacing: 1px;
   }
+
+  .choose .coin1 img {
+    width: 400px;
+}
+
+.ping {
+  margin: 0px 0!important;
+  margin-bottom: 52px 0!important;
+}
 }
 
 
@@ -893,6 +913,10 @@ header .btn-contact:hover {
   }
   .next{
     right: 50px;
+  }
+
+  .choose .coin1{
+    display: none;
   }
 
 }
@@ -1047,7 +1071,7 @@ header .btn-contact:hover {
 
 @media (max-width: 480px) {
   .gallery{
-    height: 44vh;
+    height: 40vh;
   }
   
     .image-container {
