@@ -769,6 +769,10 @@ header .btn-contact:hover {
   }
 }
 
+footer p{
+  color: #dddddd;
+  font-size: smaller;
+}
 
 @media (max-width: 1120px) {
   .nav {
