@@ -1088,6 +1088,16 @@ header .btn-contact:hover {
     }
   }
 
+  @media (max-width: 320px) {
+  .prev{
+    top: 40%;
+  }
+  .next{
+    top: 40%;
+  }
+  }
+
+  
 /* @media (max-width: 767px) {
   .headertext h4 {
     font-size: 12px !important;
