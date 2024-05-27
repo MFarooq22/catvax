@@ -1052,7 +1052,7 @@ footer p{
 }
 
 .ping {
-  margin: 62px 0;
+  /* margin: 62px 0; */
   padding-left: 10%;
 }
 
@@ -1132,7 +1132,6 @@ footer p{
   }
   }
 
-  
 /* @media (max-width: 767px) {
   .headertext h4 {
     font-size: 12px !important;
