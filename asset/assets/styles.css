@@ -599,11 +599,13 @@ header .btn-contact:hover {
 
 .prev {
   left: 200px;
+  transform: translateY(50%);
   /* Adjust this value for the left arrow */
 }
 
 .next {
   right: 200px;
+  transform: translateY(50%);
   /* Adjust this value for the right arrow */
 }
 
@@ -627,7 +629,7 @@ header .btn-contact:hover {
   display: block;
   width: 80% !important;
   max-width: 700px;
-  margin-top: 30px;
+  margin-top: 64px;
 }
 
 .close {
@@ -747,6 +749,66 @@ header .btn-contact:hover {
   margin-top: 1.8rem;
 }
 
+@media (max-width: 1200px) {
+  .prev{
+    left: 100px;
+  }
+  .next{
+    right: 100px;
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    flex-direction: column;
+    width: 300px;
+    background-color: #050d1a;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-bottom-left-radius: 5px;
+    animation: nav-ani 0.5s ease-in-out forwards;
+    min-height: 100vh;
+    max-height: 100vh; /* Add this */
+    overflow-y: auto; /* Add this */
+  }
+  @keyframes nav-ani {
+    from {
+      right: -200px;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+  .nav-list {
+    flex-direction: column !important;
+    padding-top: 80px;
+    width: 100%;
+  }
+
+  .nav-list li:not(:last-child) {
+    border-bottom: 1px solid #303030;
+  }
+  .nav-list li a {
+    letter-spacing: 1px;
+  }
+}
+
 
 @media (max-width: 991.98px) {
   p {
@@ -826,110 +888,22 @@ header .btn-contact:hover {
   }
 
   /* gallery  */
+  .prev{
+    left: 50px;
+  }
+  .next{
+    right: 50px;
+  }
 
 }
 
-
-@media (max-width: 480px) {
-.gallery{
-  height: 44vh;
-}
-
-  .image-container {
-    width: 120px;
-    height: 120px;
-  }
-
-  .image-container span {
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
-  }
-
-  .gallery-btn {
-    padding: 6px 12px;
-    bottom: -60px;
-  }
-
-
-
-  .prev {
-    left: 0;
-    top: 55%;
-  }
-
-  .next {
-    right: 0;
-    top: 55%;
-  }
-
-  .modal-content {
-    width: 80% !important;
-    margin-top: 130px;
-  }
-
-  .close {
-    top: 128px;
-    right: 21px;
-    font-size: 30px;
-  }
-}
-
-
-@media (max-width: 920px) {
-  .nav {
-    display: none;
-    position: absolute;
-    top: 0px;
-    flex-direction: column;
-    width: 300px;
-    background-color: #050d1a;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-bottom-left-radius: 5px;
-    animation: nav-ani 0.5s ease-in-out forwards;
-    min-height: 100vh;
-    max-height: 100vh; /* Add this */
-    overflow-y: auto; /* Add this */
-  }
-  @keyframes nav-ani {
-    from {
-      right: -200px;
-    }
-    to {
-      right: 0;
-    }
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-    color: white;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-  }
-  .nav-list {
-    flex-direction: column !important;
-    padding-top: 80px;
-    width: 100%;
-  }
-
-  .nav-list li:not(:last-child) {
-    border-bottom: 1px solid #303030;
-  }
-  .nav-list li a {
-    letter-spacing: 1px;
-  }
-}
 
 
 @media (max-width: 768px) {
-  .image-container {
+  /* .image-container {
     width: 150px;
     height: 150px;
-  }
+  } */
 
   .image-container span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
@@ -948,7 +922,7 @@ header .btn-contact:hover {
   }
 
   .modal-content {
-    width: 90% !important;
+    width: 75% !important;
   }
   
   .ping {
@@ -1026,6 +1000,20 @@ header .btn-contact:hover {
   .choose .coin1{
     display: none;
   }
+
+  .prev {
+    left: 5%;
+    top: 50%;
+  }
+
+  .next {
+    right: 5%;
+    top: 50%;
+  }
+
+  .close{
+    right: 40px;
+  }
 }
 
 .f-col {
@@ -1080,16 +1068,16 @@ header .btn-contact:hover {
   
     .prev {
       left: 0;
-      top: 55%;
+      top: 45%;
     }
   
     .next {
       right: 0;
-      top: 55%;
+      top: 45%;
     }
   
     .modal-content {
-      width: 80% !important;
+      width: 70% !important;
       margin-top: 130px;
     }
   
