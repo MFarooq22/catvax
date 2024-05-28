@@ -539,6 +539,7 @@ header .btn-contact:hover {
   page-break-inside: avoid;
   perspective: 512px;
   transition: transform 0.3s ease-out;
+  cursor: pointer;
 }
 
 .box img {
@@ -546,6 +547,7 @@ header .btn-contact:hover {
   height: 100%;
   pointer-events: none;
   transition: transform 0.3s ease-out;
+  border-radius: 10px;
 }
 
 

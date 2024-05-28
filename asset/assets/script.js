@@ -57,8 +57,8 @@ let boxes = document.querySelectorAll(".box");
 
 boxes.forEach((box) => {
     box.addEventListener("mousemove", (e) => {
-        let halfWidth = box.clientWidth / .5,
-            halfHeight = box.clientHeight /.5,
+        let halfWidth = box.clientWidth / .2,
+            halfHeight = box.clientHeight /.2,
             mouseX = e.pageX - box.offsetLeft,
             mouseY = e.pageY - box.offsetTop,
             maxDeg = 5, // Reduced maximum rotation to make it subtle
