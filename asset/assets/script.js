@@ -28,7 +28,7 @@ window.addEventListener('load', async () => {
 
 //   copy wallet address 
 function copyAddress() {
-  const address = document.querySelector('.donation-address span').innerText;
+  const address = document.querySelector('.contract-address').innerText;
   navigator.clipboard.writeText(address);
   Toastify({
     text: "Wallet address copied to clipboard",
