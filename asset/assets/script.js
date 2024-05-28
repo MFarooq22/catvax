@@ -26,69 +26,6 @@ window.addEventListener('load', async () => {
   await switchLang();
 })
 
-const imgContainer = document.querySelector(".image-container");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modal-img");
-const closeBtn = document.getElementById("close");
-
-let angle = 0;
-let timeout;
-
-prev.addEventListener("click", () => {
-  angle += 45;
-  clearTimeout(timeout);
-  updateGallery();
-});
-
-next.addEventListener("click", () => {
-  angle -= 45;
-  clearTimeout(timeout);
-  updateGallery();
-});
-
-function updateGallery() {
-  imgContainer.style.transform = `perspective(1000px) rotateY(${angle}deg)`;
-  timeout = setTimeout(() => {
-    angle -= 45;
-    updateGallery();
-  }, 4000);
-}
-updateGallery();
-
-const images = document.querySelectorAll(".image-container img");
-images.forEach((img, index) => {
-  img.addEventListener("click", (e) => {
-    currentIndex = index;
-    modal.style.display = "block";
-    modalImg.src = e.target.src;
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-const prevModal = document.getElementById("prevModal");
-const nextModal = document.getElementById("nextModal");
-
-let currentIndex = 0;
-
-prevModal.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  modalImg.src = images[currentIndex].src;
-});
-
-nextModal.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  modalImg.src = images[currentIndex].src;
-});
-
-
-
-
-
 //   copy wallet address 
 function copyAddress() {
   const address = document.querySelector('.donation-address span').innerText;
@@ -113,4 +50,31 @@ function toggleMenu() {
   hamburger.classList.toggle('fa-bars');
   hamburger.classList.toggle('fa-times');
 }
+
+
+// gallery 
+let boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+    box.addEventListener("mousemove", (e) => {
+        let halfWidth = box.clientWidth / .5,
+            halfHeight = box.clientHeight /.5,
+            mouseX = e.pageX - box.offsetLeft,
+            mouseY = e.pageY - box.offsetTop,
+            maxDeg = 5, // Reduced maximum rotation to make it subtle
+            maxOffset = 10; // Maximum offset for image movement
+
+        let degX = ((mouseY - halfHeight) / halfHeight) * -maxDeg;
+        let degY = ((mouseX - halfWidth) / halfWidth) * maxDeg;
+        
+        box.style.transform = `perspective(512px) rotateX(${degX}deg) rotateY(${degY}deg)`;
+
+        box.querySelector("img").style.transform = `translate(${((mouseX - halfWidth) / halfWidth) * maxOffset}px, ${((mouseY - halfHeight) / halfHeight) * maxOffset}px)`;
+    });
+
+    box.addEventListener("mouseout", () => {
+        box.style.transform = `perspective(512px) rotateX(0deg) rotateY(0deg)`;
+        box.querySelector("img").style.transform = `translate(0, 0)`;
+    });
+});
 
