@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="asset/assets/styles.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  
 
   <title>Catvax</title>
   <style>
@@ -25,38 +26,6 @@
       position: sticky;
       top: 0;
       margin-bottom: 1rem;
-    }
-
-    li {
-      font-size: 18px;
-      color: white;
-    }
-h1,h2{
-  color: rgb(239, 204, 67)!important;
-}
-
-.gmail{
-  text-decoration: none;
-  color: rgb(239, 204, 67)!important;
-}
-
-h2{
-  margin-top: 3rem;
-}
-    .donation-address {
-      /* background-color: #f8f8f8; */
-      color: white;
-      padding: 10px;
-      /* border: 1px solid #ddd; */
-      border-radius: 4px;
-      text-align: center;
-      margin: 10px 0;
-      word-wrap: break-word;
-    }
-
-    .contact {
-      margin-top: 20px;
-      /* text-align: center; */
     }
 
 
@@ -73,10 +42,11 @@ h2{
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="./index.html#socials" class="nav-link">Socials</a></li>
             <li class="nav-item"><a href="./index.html#about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="./index.html#roadmap" class="nav-link">Roadmap</a></li>
             <li class="nav-item"><a href="./index.html#buy" class="nav-link">How To Buy</a></li>
+            <li class="nav-item"><a href="./index.html#partners" class="nav-link">Partners</a></li>
+            <li class="nav-item"><a href="./index.html#socials" class="nav-link">Socials</a></li>
             <li class="nav-item"><a href="#" class="nav-link" onclick="openWhitepapar()">Whitepaper</a></li>
           </ul>
         </nav>
@@ -91,21 +61,21 @@ h2{
   <div class="blurbg" id="top">
     <div class="promo">
       <div class="container">
-        <h1 class="text-center mb-5">Fund Request for $CATVAX Project</h1>
+        <h1 class="text-center mb-5 primary-color">Fund Request for $CATVAX Project</h1>
         <section>
-          <h2>Overview</h2>
+          <h2 class="primary-color">Overview</h2>
           <p>We are thrilled to announce that we will make significant global donations to the victims of COVID-19 and other vaccine side effects. Furthermore, we will donate to cat shelters, to enhance cats' health globally by improving access to veterinary care and raising awareness about cat health issues.</p>
         </section>
         <section>
           <p>To achieve these goals, we need financial support to:</p>
-          <ul>
+          <ul class="funds-uses">
             <li>Manage and grow our social media channels.</li>
             <li>Coordinate and execute global donation campaigns.</li>
             <li>Cover operational costs such as maintenance of our website.</li>
           </ul>
         </section>
         <section>
-          <h2>How You Can Help</h2>
+          <h2 class="primary-color">How You Can Help</h2>
           <p>We kindly ask for your financial contributions to support these initiatives. </p>
           <div class="donation-address">
             <strong>Solana Donation Address:</strong><br>
@@ -116,7 +86,10 @@ h2{
     </div>
   </div>
 
-  <footer class="bg-black pt-3 pb-2">
+  <footer class="bg-black pt-3 pb-2"> 
+    <p class="ms-3 footer-email ">
+      Email: <a href="mailto:catvaxxer@gmail.com" class="primary-color ps-1 text-decoration-none">catvaxxer@gmail.com</a>
+    </p>
     <p class="text-center fs-6 copyright">©Copyright 2024. Catvax</p>
   </footer>
 
@@ -127,7 +100,7 @@ h2{
   });
 
   const openWhitepapar = () => {
-  window.open('asset/assets/Catvax - Whitepaper 2.0_20240523_143622_0000 (2).pdf', '_blank');
+  window.open('asset/assets/Catvax - WhitePaper.pdf', '_blank');
 }
   </script>
 

@@ -572,33 +572,40 @@ header .btn-contact:hover {
   transform: translate3d(-50%, -50%, 50px);
 }
 
-@media (max-width: 1200px) {
-  .gallery {
-      grid-template-columns: repeat(3, 1fr);
-  }
+
+.primary-color{
+  color: rgb(239, 204, 67)!important;
 }
 
-@media (max-width: 768px) {
-  .gallery {
-      grid-template-columns: repeat(2, 1fr);
-  }
+.funds-uses {
+  font-size: 18px;
+  color: white;
 }
 
-@media (max-width: 735px) {
-  .box > *:not(img) {
-      font-size: 12px;
-  }
+.gmail{
+  text-decoration: none;
+  color: rgb(239, 204, 67)!important;
 }
 
-@media (max-width: 385px) {
-  .box > *:not(img) {
-      font-size: 14px;
-  }
-
-  .box h1 {
-      font-size: 2em;
-  }
+.overview{
+  margin-top: 3rem;
 }
+    .donation-address {
+      /* background-color: #f8f8f8; */
+      color: white;
+      padding: 10px;
+      /* border: 1px solid #ddd; */
+      border-radius: 4px;
+      text-align: center;
+      margin: 10px 0;
+      word-wrap: break-word;
+    }
+
+    .contact {
+      margin-top: 20px;
+      /* text-align: center; */
+    }
+
 
 
 
@@ -700,6 +707,23 @@ header .btn-contact:hover {
   margin-top: 1.8rem;
 }
 
+/* footer  */
+footer p{padding-left: 3rem;
+  color: #dddddd;
+  font-size: smaller;
+}
+
+.footer-email{
+  text-decoration: none;
+  padding-top: 1rem;
+  margin-bottom: -1.8rem;
+}
+
+
+
+
+
+
 @media (max-width: 1260px) {
   .choose .coin1 img {
     width: 450px;
@@ -707,6 +731,11 @@ header .btn-contact:hover {
 }
 
 @media (max-width: 1200px) {
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
   .prev{
     left: 100px;
   }
@@ -720,10 +749,6 @@ header .btn-contact:hover {
   }
 }
 
-footer p{
-  color: #dddddd;
-  font-size: smaller;
-}
 
 @media (max-width: 1120px) {
   .nav {
@@ -882,11 +907,27 @@ footer p{
 
 
 
+@media (max-width: 900px) {
+
+  .footer-email{
+    text-decoration: none;
+    padding-top: 0;
+    padding-left: 10rem;
+    margin-bottom: 0;
+  }
+
+  .copyright{
+    margin-top: 1rem;
+  }
+}
+
+
+
 @media (max-width: 768px) {
-  /* .image-container {
-    width: 150px;
-    height: 150px;
-  } */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
   .image-container span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
   }
@@ -928,6 +969,13 @@ footer p{
   .vf {
     position: absolute;
     left: -9999px;
+  }
+}
+
+
+@media (max-width: 735px) {
+  .box > *:not(img) {
+      font-size: 12px;
   }
 }
 
@@ -1071,6 +1119,16 @@ footer p{
       top: 128px;
       right: 21px;
       font-size: 30px;
+    }
+  }
+
+  @media (max-width: 385px) {
+    .box > *:not(img) {
+        font-size: 14px;
+    }
+  
+    .box h1 {
+        font-size: 2em;
     }
   }
 
