@@ -1044,6 +1044,14 @@ footer p{padding-left: 3rem;
   .close{
     right: 40px;
   }
+
+
+
+    .footer-email{
+      padding-left: 8rem;
+    }
+
+
 }
 
 .f-col {
@@ -1120,6 +1128,12 @@ footer p{padding-left: 3rem;
       right: 21px;
       font-size: 30px;
     }
+
+    .footer-email{
+      padding-left: 5rem;
+    }
+
+
   }
 
   @media (max-width: 385px) {
@@ -1129,6 +1143,10 @@ footer p{padding-left: 3rem;
   
     .box h1 {
         font-size: 2em;
+    }
+
+    .footer-email{
+      padding-left: 4rem;
     }
   }
 
